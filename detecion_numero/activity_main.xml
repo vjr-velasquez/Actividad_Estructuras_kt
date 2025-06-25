@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detector de Números"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese un número:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/et_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba aquí el número"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_comprobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprobar"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Resultado aparecerá aquí"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#CCCCCC"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txt_explicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verde: Positivo | Rojo: Negativo | Azul: Cero"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</LinearLayout>
